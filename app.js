@@ -15,7 +15,7 @@ app.use(methodOverride("_method"));
 
 
 
-mongoose.connect('mongodb+srv://kushDB:bas@nT6542@kushmongo-9mgpi.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://kushDB:<Text-me-for-password>@kushmongo-9mgpi.mongodb.net/test?retryWrites=true&w=majority', {
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() => {
