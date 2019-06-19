@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+	<div class = "ui main text container segment"> 
+
+    <% fetchedBlog.forEach(function(el){ %>
+
+        <h2>
+            <%= el.title %>
+        </h2>
+
+        <p>Posted on :
+            <%=el.date.toDateString()%>
+        </p>
+        <img class="ui large image" src="<%= el.image %>">
+        <p>
+            <%= el.body.substring(0,100) %> . . .</p>
+        <a href="/blogs/<%=el._id%>">
+            <button class="mini ui violet basic button">Read More</button>
+        </a>
+
+        <% }); %>
+</div>
+            <% include partials/footer %>
